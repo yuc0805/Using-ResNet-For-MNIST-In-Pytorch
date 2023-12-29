@@ -25,7 +25,7 @@ def get_args_parser():
                         help='images input size')
     parser.add_argument('--num_classes', default=10, type=int,
                         help='number of classes')
-    parser.add_argument('--model', default='resnet_50', type=str, metavar='MODEL',
+    parser.add_argument('--model', default='resnet_18', type=str, metavar='MODEL',
                         help='Name of model to train')
     parser.add_argument('--in_channels', default=1, type=int,
                         help='size of channels')
