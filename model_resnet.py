@@ -158,14 +158,28 @@ class ResNet(nn.Module):
 
         return x
 
+# Some ResNet architecture suggessted by the original paper:
+def resnet_18(**kwargs):
+    model = ResNet([[64,128,256,512],[2,2,2,2],1,False],**kwargs)
+    return model
+
+def resnet_34(**kwargs):
+    model = ResNet([[64,128,256,512],[3,4,6,3],1,False],**kwargs)
+    return model
 
 def resnet_50(**kwargs):
     model = ResNet([[64,128,256,512],[3,4,6,3],4,True],**kwargs)
-
     return model
-    
 
+def resnet_101(**kwargs):
+    model = ResNet([[64,128,256,512],[3,4,23,3],4,True],**kwargs)
+    return model
+
+def resnet_152(**kwargs):
+    model = ResNet([[64,128,256,512],[3,8,36,3],4,True],**kwargs)
+    return model
             
+
 
 
 
