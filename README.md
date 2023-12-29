@@ -1,6 +1,3 @@
-Certainly! Here's the revised README file with the specified versions in the `requirements.txt` file:
-
-```markdown
 # ResNet on MNIST/FashionMNIST with PyTorch
 
 ## Overview
