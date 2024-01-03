@@ -42,6 +42,8 @@ def get_args_parser():
                         help='learning rate (absolute lr)')
 
     # Dataset parameters
+    parser.add_argument('--datasets', default='MNIST',
+                        help='datasets for training')
     parser.add_argument('--output_dir', default='./output_dir',
                         help='path where to save, empty for no saving')
     parser.add_argument('--device', default='mps',

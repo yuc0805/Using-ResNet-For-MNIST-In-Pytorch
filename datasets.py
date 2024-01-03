@@ -5,11 +5,12 @@ from torchvision import datasets, transforms
 
 def build_dataset(is_train, args):
     transform = build_transform(is_train, args)
-    dataset = datasets.MNIST('../data', train=is_train, download=True,
+    dataset = datasets.__dict__[args.datasets]('../data', train=is_train, download=True,
                        transform=transform)
     
     print(dataset)
     return dataset
+
 
 
 def build_transform(is_train, args):

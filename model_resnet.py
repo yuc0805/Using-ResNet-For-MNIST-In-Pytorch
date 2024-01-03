@@ -179,7 +179,10 @@ def resnet_152(**kwargs):
     model = ResNet([[64,128,256,512],[3,8,36,3],4,True],**kwargs)
     return model
             
-
+#Test network
+if __name__ == '__main__':
+    model = resnet_18(in_channels=1,num_classes=10)
+    print(model)
 
 
 
